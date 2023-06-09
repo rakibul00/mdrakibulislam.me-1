@@ -20,7 +20,7 @@
 
 /* === Header start === */
 header{
-    height:100vh;
+    height:150vh;
     width: 300px;
     padding: 15px 30px;
     background-color: var(--sideBGColor);
@@ -98,7 +98,16 @@ header nav ul li .active i{
 }
 
 /* Footer*/
+/* nav p{
 
+    position: fixed;
+    background-color: var(--sideBGColor);
+    color: lightgray;
+} */
+/* nav p a{
+    color: var(--themeColor);
+    text-decoration: none;
+}
 header .footer{
     text-align: center;
     background-color: var(--sideBGColor);
@@ -116,24 +125,8 @@ header .footer{
 header .footer p a{
     color: var(--themeColor);
     text-decoration: none;
-}
-@media(max-width:700px){
-    header .footer{
-        text-align: center;
-        background-color: var(--sideBGColor);
-        width: 300px;
-        color: lightgray;
-        font-size: 14px;
-        letter-spacing: 0.6px;
-        padding: 15px;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        transition: 0.4s;
-        bottom:  330px;
-       
-    }
-}
+} */
+
 @media(max-width:334px){
     header .footer{
         text-align: center;
@@ -203,7 +196,30 @@ header .footer p a{
         margin-right: 40px;
     }
 }
-
+@media(max-width:500px){
+    #Menubtn{
+        display: block;
+        margin-left: 90px;
+    }
+}
+@media(max-width:620px){
+    #Menubtn{
+        display: block;
+        margin-right: 30px;
+    }
+}
+@media(max-width:665px){
+    #Menubtn{
+        display: block;
+        margin-right: 50px;
+    }
+}
+@media(max-width:685px){
+    #Menubtn{
+        display: block;
+        margin-right: 60px;
+    }
+}
 /*Header toggle*/
 
 .mobile-nav-active header{
@@ -250,7 +266,7 @@ main{
 #home{
     height: 100vh;
     width: 100%;
-    background-image: url(img/1675488910353.jpg);
+    background-image: url(img/IMG_20230609_234758.jpg);
     background-size: cover;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -274,7 +290,7 @@ main{
 }
 #home .home-row h1{
     font-size: 60px;
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 10px;
@@ -291,7 +307,7 @@ main{
 #home .home-row p span{
     border-bottom: 4px solid var(--themeColor);
 }
-@media(max-width:670px){
+/* @media(max-width:670px){
     #home{
         padding: 30px;
     }
@@ -331,7 +347,7 @@ main{
         font-size: 15px;
         font-weight: 400;
     }
-}
+} */
 
 
 
@@ -956,7 +972,11 @@ main{
     font-weight: 400;
     cursor: pointer;
 }
-
+#container .container-row .contact-right form input[type=submit]:hover{
+    background-color: var(--bgColor);
+    border: 2px solid var(--themeColor);
+    color: var(--themeColor);
+}
 @media(max-width:800px){
     #container{
         padding: 50px;
